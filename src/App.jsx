@@ -13,6 +13,8 @@ import Accelerator from './pages/Accelerator.jsx'
 import Disclaimer from './pages/Disclaimer.jsx'
 import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
+// blog_pages
+import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
 
 export default function App() {
   return (
@@ -33,7 +35,7 @@ export default function App() {
           <Route path="/disclaimer" element={<Disclaimer />} />
 
           {/* blog_pages */}
-
+          <Route path="/blog/0g-node-sale-results" element={<Foundation01 />} />
           
           <Route path="*" element={<Home />} />
         </Routes>
