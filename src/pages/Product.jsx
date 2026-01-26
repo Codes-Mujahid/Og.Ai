@@ -13,6 +13,7 @@ import riveCompute from '../assets/animations/rive/02.compute_network_smaller.ri
 import riveComputeMobile from '../assets/animations/rive/02.compute_network_smaller_mobile.riv';
 import riveStorage from '../assets/animations/rive/03.storage_small.riv';
 import riveDataAvailability from '../assets/animations/rive/04.data_availability_smaller.riv';
+import './Product.css'
 
 const RiveAnimation = ({ url, stateMachine, artboard, fit, alignment }) => {
   const { rive, RiveComponent } = useRive({
