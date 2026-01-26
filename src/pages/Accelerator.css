@@ -1,5 +1,3 @@
-@import url("https://cdn.prod.website-files.com/680b884d38733122a923739b/css/0g-ai.webflow.shared.87f49be73.min.css");
-
 /* Global styles adapted from accelerator.html */
 body {
   -webkit-font-smoothing: antialiased;
@@ -104,4 +102,9 @@ html {
   html {
     font-size: calc(0.7494305239179955rem + 0.9111617312072892vw);
   }
+}
+
+/* custom css */
+.social_item {
+  display: flex;
 }
