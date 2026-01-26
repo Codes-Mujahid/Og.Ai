@@ -1,0 +1,12 @@
+.form_group label {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.form_message-success-wrapper {
+  display: none;
+}
+
+.form_message-error-wrapper {
+  display: none;
+}
