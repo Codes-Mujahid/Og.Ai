@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop.jsx'
 import Home from './pages/Home.jsx'
 import Press from './pages/Press.jsx'
 import Brandkit from './pages/Brandkit.jsx'
@@ -15,10 +16,13 @@ import Footer from './components/Footer.jsx'
 import Navbar from './components/Navbar.jsx'
 // blog_pages
 import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
+import Foundation02 from './pages/blog/Og_Foundation/Foundation02.jsx'
+import Foundation03 from './pages/blog/Og_Foundation/Foundation03.jsx'
 
 export default function App() {
   return (
     <div>
+      <ScrollToTop />
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,6 +40,8 @@ export default function App() {
 
           {/* blog_pages */}
           <Route path="/blog/0g-node-sale-results" element={<Foundation01 />} />
+          <Route path="/blog/0g-ecosystem-receives-290m-in-financing-to-develop-world-s-first-decentralized-ai-operating-system" element={<Foundation02 />} />
+          <Route path="/blog/0g-node-sale-purchasing-guide" element={<Foundation03 />} />
           
           <Route path="*" element={<Home />} />
         </Routes>
