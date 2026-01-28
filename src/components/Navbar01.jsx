@@ -2,7 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar01() {
   return (
-    <div className="navbar01_nav nav">
+    <>
+      <div className="navbar01_nav nav">
       <div
         data-animation="default"
         className="navbar01_navbar_wrapper navbar_wrapper w-nav"
@@ -422,32 +423,33 @@ export default function Navbar01() {
           </div>
         </div>
       </div>
+      </div>
 
       {/* ================= MOBILE BOTTOM NAV ================= */}
-      <div className="fixed bottom-0 left-0 right-0 bg-[#CB8AFF] shadow-lg md:hidden z-10">
-        <div className="flex justify-around items-center py-2 text-sm">
-          <NavLink to="/" className="flex flex-col items-center">
+      <div className="navbar01_mobile-bottom-nav fixed bottom-0 left-0 right-0 bg-[#CB8AFF] shadow-lg md:hidden z-[99999] pointer-events-auto">
+        <div className="navbar01_mobile-bottom-nav-inner flex justify-around items-center py-2 text-sm">
+          <a href="/" className="navbar01_mobile-bottom-link flex flex-col items-center">
             <i className="fa-regular fa-house text-white"></i>
             <span className="text-white">Home</span>
-          </NavLink>
+          </a>
 
-          <Link to="/blog" className="flex flex-col items-center">
+          <NavLink to="/blog" className="navbar01_mobile-bottom-link flex flex-col items-center">
             <i className="fa-regular fa-newspaper text-white"></i>
             <span className="text-white">Blog</span>
-          </Link>
+          </NavLink>
 
-          <NavLink to="/contact" className="flex flex-col items-center">
+          <NavLink to="/contact" className="navbar01_mobile-bottom-link flex flex-col items-center">
             <i className="fa-regular fa-comment-dots text-white"></i>
             <span className="text-white">Contact</span>
           </NavLink>
 
-          <NavLink to="/login" className="flex flex-col items-center">
+          <NavLink to="/login" className="navbar01_mobile-bottom-link flex flex-col items-center">
             <i className="fa-regular fa-user text-white"></i>
             <span className="text-white">Login</span>
           </NavLink>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
