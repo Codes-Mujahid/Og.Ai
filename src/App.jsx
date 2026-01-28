@@ -18,6 +18,7 @@ import Navbar from './components/Navbar.jsx'
 import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
 import Foundation02 from './pages/blog/Og_Foundation/Foundation02.jsx'
 import Foundation03 from './pages/blog/Og_Foundation/Foundation03.jsx'
+import Login from './pages/Login.jsx'
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
       <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/product" element={<Product />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<Faq />} />

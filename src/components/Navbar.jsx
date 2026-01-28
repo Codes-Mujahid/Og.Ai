@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { Link, NavLink } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -26,8 +26,7 @@ const Navbar = () => {
         data-collapse="tiny"
         fs-scrolldisable-media="(max-width: 478px)"
         role="banner"
-        data-duration="400"
-      >
+        data-duration="400">
         <div className="navbar_cover">
           <div className="navbar_logo"></div>
 
@@ -82,7 +81,7 @@ const Navbar = () => {
             className="navbar_menu w-nav-menu hidden md:block"
             onClick={() => setOpen(false)}>
             <div className="navbar_link-wrapper">
-              <div className="hidden md:block">
+              <div className="hidden sm:block">
                 <a href="/research" className="navbar_link is-link">
                   Research
                 </a>
@@ -137,7 +136,7 @@ const Navbar = () => {
                 </nav>
               </div>
 
-              <div className="block md:hidden ">
+              <div className="block sm:hidden">
                 <a href="/research" className="navbar_link is-link text-[#B75FFF]!">
                   Research
                 </a>
@@ -228,6 +227,32 @@ const Navbar = () => {
             </nav>
           </div>
 
+        </div>
+      </div>
+
+
+      {/* ================= MOBILE BOTTOM NAV ================= */}
+      <div className="fixed bottom-0 left-0 right-0 bg-[#CB8AFF] shadow-lg md:hidden z-10">
+        <div className="flex justify-around items-center py-2 text-sm">
+          <NavLink to="/" className="flex flex-col items-center">
+            <i className="fa-solid fa-house  text-white"></i>
+            <span className="text-white">Home</span>
+          </NavLink>
+
+          <Link to="/" className="flex flex-col items-center">
+            <i className="fa-solid fa-laptop-code text-white"></i>
+            <span className="text-white">Blog</span>
+          </Link>
+
+          <NavLink to="/" className="flex flex-col items-center">
+            <i className="fa-solid fa-circle-info  text-white"></i>
+            <span className="text-white">About</span>
+          </NavLink>
+
+          <NavLink to="/" className="flex flex-col items-center">
+            <i className="fa-solid fa-envelope  text-white"></i>
+            <span className="text-white">Contact</span>
+          </NavLink>
         </div>
       </div>
     </div>
