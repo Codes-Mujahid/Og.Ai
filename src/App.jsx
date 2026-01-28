@@ -18,6 +18,7 @@ import Navbar from './components/Navbar.jsx'
 import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
 import Foundation02 from './pages/blog/Og_Foundation/Foundation02.jsx'
 import Foundation03 from './pages/blog/Og_Foundation/Foundation03.jsx'
+import Foundation04 from './pages/blog/Og_Foundation/Foundation04.jsx'
 import Login from './pages/Login.jsx'
 
 export default function App() {
@@ -44,6 +45,7 @@ export default function App() {
           <Route path="/blog/0g-node-sale-results" element={<Foundation01 />} />
           <Route path="/blog/0g-ecosystem-receives-290m-in-financing-to-develop-world-s-first-decentralized-ai-operating-system" element={<Foundation02 />} />
           <Route path="/blog/0g-node-sale-purchasing-guide" element={<Foundation03 />} />
+          <Route path="/blog/0g-foundation-ai-alignment-node-sale-101-key-details-and-how-to-participate" element={<Foundation04 />} />
           
           <Route path="*" element={<Home />} />
         </Routes>
