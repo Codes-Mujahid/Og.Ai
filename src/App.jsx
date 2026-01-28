@@ -13,7 +13,7 @@ import Faq from './pages/Faq.jsx'
 import Accelerator from './pages/Accelerator.jsx'
 import Disclaimer from './pages/Disclaimer.jsx'
 import Footer from './components/Footer.jsx'
-import Navbar from './components/Navbar.jsx'
+import Navbar01 from './components/Navbar01.jsx'
 // blog_pages
 import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
 import Foundation02 from './pages/blog/Og_Foundation/Foundation02.jsx'
@@ -27,16 +27,16 @@ import Industry03 from './pages/blog/Industry/Industry03.jsx'
 import Industry04 from './pages/blog/Industry/Industry04.jsx'
 import Industry05 from './pages/blog/Industry/Industry05.jsx'
 
-import Login from './pages/Login.jsx'
+// import Login from './pages/Login.jsx'
 
 export default function App() {
   return (
     <div>
       <ScrollToTop />
-      <Navbar />
+      <Navbar01 />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          {/* <Route path="/login" element={<Login />} /> */}
           <Route path="/product" element={<Product />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<Faq />} />
