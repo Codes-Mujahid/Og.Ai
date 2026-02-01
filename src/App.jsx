@@ -27,6 +27,11 @@ import Industry03 from './pages/blog/Industry/Industry03.jsx'
 import Industry04 from './pages/blog/Industry/Industry04.jsx'
 import Industry05 from './pages/blog/Industry/Industry05.jsx'
 
+import Partners01 from './pages/blog/Partners/Partners01.jsx'
+import Partners02 from './pages/blog/Partners/Partners02.jsx'
+import Partners03 from './pages/blog/Partners/Partners03.jsx'
+import Partners04 from './pages/blog/Partners/Partners04.jsx'
+
 // import Login from './pages/Login.jsx'
 
 export default function App() {
@@ -62,6 +67,12 @@ export default function App() {
           <Route path="/blog/how-web3-and-ai-can-work-together" element={<Industry03 />}/>
           <Route path="/blog/how-0g-can-power-better-web3-gaming" element={<Industry04 />} />
           <Route path="/blog/top-50-ai-projects" element={<Industry05 />} />
+
+
+          <Route path="/blog/0g-validators" element={<Partners01 />} />
+          <Route path="/blog/early-signals-0g-global-accelerator" element={<Partners02 />}/>
+          <Route path="/blog/builder-spotlight-gimo" element={<Partners03 />}/>
+          <Route path="/blog/0g-ai-and-alibaba-cloud-to-advance-ai-and-web3-ecosystems-in-apac" element={<Partners04 />}/>
           
           <Route path="*" element={<Home />} />
         </Routes>
