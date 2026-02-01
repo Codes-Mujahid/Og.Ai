@@ -31,6 +31,9 @@ import Partners01 from './pages/blog/Partners/Partners01.jsx'
 import Partners02 from './pages/blog/Partners/Partners02.jsx'
 import Partners03 from './pages/blog/Partners/Partners03.jsx'
 import Partners04 from './pages/blog/Partners/Partners04.jsx'
+import Partners05 from './pages/blog/Partners/Partners05.jsx'
+import Partners06 from './pages/blog/Partners/Partners06.jsx'
+import Partners07 from './pages/blog/Partners/Partners07.jsx'
 
 // import Login from './pages/Login.jsx'
 
@@ -73,6 +76,9 @@ export default function App() {
           <Route path="/blog/early-signals-0g-global-accelerator" element={<Partners02 />}/>
           <Route path="/blog/builder-spotlight-gimo" element={<Partners03 />}/>
           <Route path="/blog/0g-ai-and-alibaba-cloud-to-advance-ai-and-web3-ecosystems-in-apac" element={<Partners04 />}/>
+          <Route path="/blog/announcing-lumoz-and-0g-partnership" element={<Partners05 />}/>
+          <Route path="/blog/user-guide-focg-summer-co-hosted-by-0g-labs-blade-games-and-blockbooster" element={<Partners06 />}/>
+          <Route path="/blog/0g-partnership-with-assister" element={<Partners07 />}/>
           
           <Route path="*" element={<Home />} />
         </Routes>
