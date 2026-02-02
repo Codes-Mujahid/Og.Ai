@@ -80,6 +80,7 @@ export default function App() {
           <Route path="/blog/user-guide-focg-summer-co-hosted-by-0g-labs-blade-games-and-blockbooster" element={<Partners06 />}/>
           <Route path="/blog/0g-partnership-with-assister" element={<Partners07 />}/>
           
+          
           <Route path="*" element={<Home />} />
         </Routes>
       <Footer />
