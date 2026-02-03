@@ -12,6 +12,7 @@ import riveDataAvailabilityFull from '../assets/animations/rive/682c64bf7a0c618a
 import riveMarketplaceFull from '../assets/animations/rive/6819fc40d392f94abce9a5dc_05._service_marketplace_smaller.riv'
 import riveAlignmentNodesFull from '../assets/animations/rive/6819fc4004f353ae504fd7f5_06._aligment_nodes_smaller.riv'
 import riveDappsFull from '../assets/animations/rive/681b5af19cd4af1ee3976b76_07._dapps_smaller.riv'
+import './Home.css'
 
 function extractBody(html) {
   const match = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i)
