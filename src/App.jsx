@@ -35,6 +35,24 @@ import Partners05 from './pages/blog/Partners/Partners05.jsx'
 import Partners06 from './pages/blog/Partners/Partners06.jsx'
 import Partners07 from './pages/blog/Partners/Partners07.jsx'
 
+import News01 from './pages/blog/News/News01.jsx'
+import News02 from './pages/blog/News/News02.jsx'
+import News03 from './pages/blog/News/News03.jsx'
+import News04 from './pages/blog/News/News04.jsx'
+import News05 from './pages/blog/News/News05.jsx'
+import News06 from './pages/blog/News/News06.jsx'
+import News07 from './pages/blog/News/News07.jsx'
+import News08 from './pages/blog/News/News08.jsx'
+import News09 from './pages/blog/News/News09.jsx'
+import News10 from './pages/blog/News/News10.jsx'
+import News11 from './pages/blog/News/News11.jsx'
+import News12 from './pages/blog/News/News12.jsx'
+import News13 from './pages/blog/News/News13.jsx'
+import News14 from './pages/blog/News/News14.jsx'
+import News15 from './pages/blog/News/News15.jsx'
+import News16 from './pages/blog/News/News16.jsx'
+import News17 from './pages/blog/News/News17.jsx'
+
 // import Login from './pages/Login.jsx'
 
 export default function App() {
@@ -79,6 +97,24 @@ export default function App() {
           <Route path="/blog/announcing-lumoz-and-0g-partnership" element={<Partners05 />}/>
           <Route path="/blog/user-guide-focg-summer-co-hosted-by-0g-labs-blade-games-and-blockbooster" element={<Partners06 />}/>
           <Route path="/blog/0g-partnership-with-assister" element={<Partners07 />}/>
+
+          <Route path="/blog/ai-alignment-node-rewards-distribution-schedule-eligibility" element={<News01 />} />
+          <Route path="/blog/explaining-the-0g-token-airdrop" element={<News02 />} />
+          <Route path="/blog/ethcc-cannes-recap" element={<News03 />} />
+          <Route path="/blog/0g-art-contest" element={<News04 />} />
+          <Route path="/blog/token-update-a-look-at-0g-s-upcoming-token-allocation" element={<News05 />} />
+          <Route path="/blog/introducing-0g-hub-your-gateway-to-the-0g-ecosystem" element={<News06 />} />
+          <Route path="/blog/navigating-0g-s-tech-an-update-on-the-latest-in-0g-s-products" element={<News07 />} />
+          <Route path="/blog/the-0g-ecosystem" element={<News08 />} />
+          <Route path="/blog/0g-serving" element={<News09 />} />
+          <Route path="/blog/reintroducing-0g-the-first-decentralized-ai-operating-system" element={<News10 />}/>
+          <Route path="/blog/focg-summer-wrap-up" element={<News11 />}/>
+          <Route path="/blog/0g-foundation-and-onepiece-labs-join-forces-to-launch-pioneering-incubation-program-for-web3-and-ai-innovators" element={<News12 />}/>
+          <Route path="/blog/hackathon-evolution-how-your-suggestions-shape-our-updates" element={<News13 />}/>
+          <Route path="/blog/ethcc-brussels-recap-og-lab-s-first-summit-path-to-dagi" element={<News14 />}/>
+          <Route path="/blog/0g-ambassador-program-cohort-1-selection" element={<News15 />}/>
+          <Route path="/blog/focg-summer-co-hosted-by-0g-labs-blade-games-and-blockbooster" element={<News16 />}/>
+          <Route path="/blog/0g-x-onepiece-labs-x-camp-hackathon" element={<News17 />}/>
           
           
           <Route path="*" element={<Home />} />
