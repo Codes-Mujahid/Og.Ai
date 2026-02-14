@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Home from './pages/Home.jsx'
 import Press from './pages/Press.jsx'
@@ -14,6 +14,7 @@ import Accelerator from './pages/Accelerator.jsx'
 import Disclaimer from './pages/Disclaimer.jsx'
 import Footer from './components/Footer.jsx'
 import Navbar01 from './components/Navbar01.jsx'
+import Login from './pages/Login.jsx'
 // blog_pages
 import Foundation01 from './pages/blog/Og_Foundation/Foundation01.jsx'
 import Foundation02 from './pages/blog/Og_Foundation/Foundation02.jsx'
@@ -101,13 +102,16 @@ import Builder01 from './pages/blog/Builder Spotlight/Builder01.jsx'
 // import Login from './pages/Login.jsx'
 
 export default function App() {
+  const location = useLocation()
+  const isLoginPath = location.pathname.startsWith('/login')
+
   return (
     <div>
       <ScrollToTop />
-      <Navbar01 />
+      {!isLoginPath ? <Navbar01 /> : null}
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/login" element={<Login />} /> */}
+          <Route path="/login" element={<Login />} />
           <Route path="/product" element={<Product />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/faq" element={<Faq />} />
@@ -208,7 +212,7 @@ export default function App() {
           
           <Route path="*" element={<Home />} />
         </Routes>
-      <Footer />
+      {!isLoginPath ? <Footer /> : null}
     </div>
   )
 }
