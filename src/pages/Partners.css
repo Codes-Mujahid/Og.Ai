@@ -1,0 +1,457 @@
+/* Partners Page Styles - 100% Master Clone with Unique Class Names */
+
+.partners-page-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* Hero Section */
+.partners-hero-section {
+  background: url("../assets/images/partners_hero_bg.webp") no-repeat center
+    center;
+  background-size: cover;
+  position: relative;
+  padding-top: 12.5rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+  min-height: 25rem;
+}
+
+.partners-hero-padding {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.partners-hero-container {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.partners-hero-bg-wrapper {
+  z-index: -1;
+  position: absolute;
+  inset: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+.partners-hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  inset: 0;
+}
+
+.partners-hero-gradient {
+  z-index: 2;
+  background-image: linear-gradient(rgba(50, 0, 113, 0), rgb(50, 0, 113) 76%);
+  height: 90%;
+  position: absolute;
+  inset: auto 0% 0%;
+  pointer-events: none;
+}
+
+.partners-hero-content {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding-top: 2rem;
+}
+
+.partners-hero-title-wrapper {
+  max-width: 60rem;
+}
+
+.partners-hero-stats-wrapper {
+  max-width: 40rem;
+}
+
+.partners-hero-title-wrapper h1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:
+    Geist,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.partners-hero-title-wrapper .one-line {
+  display: block;
+}
+
+.partners-stats-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.partners-stats-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-stats-number {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family:
+    Geist,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+.partners-stats-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.partners-hero-spacer {
+  margin-bottom: 1.5rem;
+}
+
+.partners-hero-description {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 35rem;
+}
+
+/* Filter Section */
+.partners-filter-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.partners-filter-wrapper {
+  width: 100%;
+  max-width: 90rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.partners-filter-menu {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.partners-filter-link {
+  cursor: pointer;
+  border-radius: 100rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  background-color: #f1f1f1;
+  color: rgba(0, 0, 0, 0.6);
+  border: 1px solid transparent;
+  user-select: none;
+}
+
+.partners-filter-link:hover {
+  background-color: rgba(183, 95, 255, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.partners-filter-active {
+  background-color: rgba(183, 95, 255, 0.15);
+  color: #b75fff;
+  border-color: rgba(183, 95, 255, 0.3);
+  font-weight: 600;
+}
+
+.partners-filter-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.partners-filter-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  margin-right: 0;
+  transition:
+    opacity 0.3s,
+    background-color 0.3s;
+  flex-shrink: 0;
+}
+
+.partners-filter-dot-active,
+.partners-filter-active .partners-filter-dot {
+  margin-right: 0;
+  opacity: 1;
+  background-color: #b75fff;
+}
+
+.partners-filter-text {
+  font-weight: 500;
+  font-family: Geistmono, "Courier New", monospace;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: inherit;
+  white-space: nowrap;
+}
+
+/* Partners Grid Section */
+.partners-grid-section {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+
+.partners-grid-list {
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-rows: auto;
+  grid-auto-columns: 1fr;
+  display: grid;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.partners-grid-item {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.partners-grid-item:hover {
+  background-color: #f3e4ff;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #b75fff;
+}
+
+.partners-grid-content-wrapper {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners-grid-content {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.partners-grid-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.partners-spacer-medium {
+  margin-bottom: 1rem;
+}
+
+.partners-spacer-small {
+  margin-bottom: 0.5rem;
+}
+
+.partners-spacer-xmedium {
+  margin-bottom: 1.5rem;
+}
+
+.partners-grid-title {
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family:
+    Geist,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.partners-grid-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.partners-grid-description p {
+  margin: 0;
+}
+
+.partners-grid-icon-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: auto;
+}
+
+.partners-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.75rem;
+  height: 2.75rem;
+
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.partners-link-icon:hover {
+  color: #b75fff;
+}
+
+.partners-icon-embed {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partners-icon-embed svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styles */
+@media screen and (min-width: 768px) {
+  .partners-hero-padding {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .partners-hero-title-wrapper h1 {
+    font-size: 5rem;
+  }
+
+  .partners-grid-content-wrapper {
+    padding: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .partners-grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .partners-grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  .partners-grid-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (min-width: 3048px) {
+  .partners-grid-list {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .partners-grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-hero-section {
+    padding-top: 8rem;
+    padding-bottom: 2.5rem;
+    min-height: 20rem;
+  }
+
+  .partners-hero-title-wrapper h1 {
+    font-size: 2.5rem;
+  }
+
+  .partners-hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .partners-stats-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .partners-stats-number {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .partners-hero-title-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .partners-hero-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .partners-filter-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .partners-grid-content-wrapper {
+    padding: 1.5rem;
+  }
+}

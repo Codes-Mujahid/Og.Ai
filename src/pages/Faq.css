@@ -1,0 +1,31 @@
+.faq-page .text-rich-text *:not(a) {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.faq-page .text-rich-text *:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .faq-page .faq_accordion:first-child {
+    border-top: 0px;
+  }
+}
+
+.faq-page .faq_answer {
+  height: 0px;
+  overflow: hidden;
+  transition: height 300ms ease;
+}
+
+.faq-page .faq_line.is-vertical {
+  transform-origin: center;
+  transition:
+    transform 300ms ease,
+    opacity 300ms ease;
+}
+
+.faq-page .faq_accordion.is-open .faq_line.is-vertical {
+  transform: scaleY(0);
+  opacity: 0;
+}

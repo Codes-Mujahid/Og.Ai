@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #b75fff;
+  --color-secondary: #e5e5e5;
+  --color-accent: #ffffff;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* navbar smooth  dropdown */
+@media screen and (min-width: 992px) {
+  .navbar_link.w-dropdown .w-dropdown-list {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+    pointer-events: none;
+  }
+
+  .navbar_link.w-dropdown:hover .w-dropdown-list {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar_link.w-dropdown .w-dropdown-list {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    transition: none;
+  }
+
+  /* Webflow adds this class on click */
+  .w-dropdown.w--open .w-dropdown-list {
+    display: block;
+  }
+}

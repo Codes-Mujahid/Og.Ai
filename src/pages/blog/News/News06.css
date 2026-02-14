@@ -1,0 +1,46 @@
+.n06_copy-toast {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--purple-shade, #9200e1);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.n06_copy-toast.n06_show {
+  opacity: 1;
+}
+
+.n06_section_hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.n06_hero_bg-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.n06_container .w-richtext ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
+
+.n06_container .w-richtext ol {
+  list-style-type: decimal;
+  padding-left: 2rem;
+}
+
+.n06_container .w-richtext li {
+  display: list-item;
+}
+

@@ -1,0 +1,16 @@
+@media screen and (max-width: 479px) {
+  .press-vertical_content-wrap {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+}
+.press_meta-wrapper {
+  margin-top: 1rem;
+}
+.custom-img {
+  border-radius: 1rem;
+}

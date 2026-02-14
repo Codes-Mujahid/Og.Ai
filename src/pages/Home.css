@@ -1,0 +1,14 @@
+.hero_spline {
+  margin-top: 4rem !important;
+  pointer-events: none;
+}
+
+.spline_wrapper {
+  pointer-events: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .hero_spline {
+    transform: none !important;
+  }
+}
