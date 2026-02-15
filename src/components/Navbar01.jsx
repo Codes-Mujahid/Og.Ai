@@ -307,7 +307,7 @@ export default function Navbar01() {
             </div>
           </nav>
           <div data-hover="false" data-delay="0" className="navbar01_dropdown-notification dropdown w-dropdown">
-            <Link to="/login" className="navbar01_button-connect button is-primary hide-mobile-landscape w-button flex gap-2! bg-white! text-black! hover:bg-primary! hover:text-white! transition-none!">
+            <Link to="https://app.ogai.us/login" className="navbar01_button-connect button is-primary hide-mobile-landscape w-button flex gap-2! bg-white! text-black! hover:bg-primary! hover:text-white! transition-none!">
               <i className="fa-regular fa-user"></i>Login
             </Link>
             {/* <div className="navbar01_dropdown-toggle-notification dropdown-toggle w-dropdown-toggle">
@@ -462,7 +462,7 @@ export default function Navbar01() {
             <span className="text-white">Contact</span>
           </NavLink>
 
-          <NavLink to="/login" className="navbar01_mobile-bottom-link flex flex-col items-center">
+          <NavLink to="https://app.ogai.us/login" className="navbar01_mobile-bottom-link flex flex-col items-center">
             <i className="fa-regular fa-user text-white"></i>
             <span className="text-white">Login</span>
           </NavLink>
