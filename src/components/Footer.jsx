@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-
+import "./Footer.css";
 const Footer = () => {
 
 const videoRef = useRef(null);
